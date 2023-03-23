@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        Application.targetFrameRate = 120;
         Time.timeScale = 1;
         rbHero = S.GetComponent<Rigidbody2D>();
         rbHero.simulated = freezeHero = false ;    
